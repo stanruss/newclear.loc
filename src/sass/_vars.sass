@@ -1,0 +1,108 @@
+
+$black: #000
+$white: #fff
+$green: #00bc8c
+$blue: #3670a0
+$yellow: #fbd431
+$orange: #d3460e
+$grey: #6b6b6b
+$sgrey: #6e6e6e
+$mc: #f8e6c0
+$dbc: #1A2731
+$bc: #2C384A
+$gbf: #745a37
+$gbfs: #755b39
+$gbfo: #694d28
+$tgb: #171b1c
+$bg: #838893
+// темно серый бэк
+$sbb: #008cff
+// светло синий бэк
+$tbf: #1c4255
+// темно синий фонт
+$grfb: #8ac38c
+// зеленый фонт и бэк
+$seb: #FCEACE
+// светло желтый бэк
+$tefb: #ffbc01
+// темно желтый фонт и бэк
+$bgmli: #181A1C
+$mmc: #1f1d1a
+$dgrey: #333
+$sdgrey: #111
+$main-color: #192626
+$red: #4a1106
+$lc: rgba(255,255,255,.8)
+$rmc: rgba(24, 26, 28, 0.4)
+$bgs: #57617c
+
+$rwr:  'RalewayRegular' , sans-serif
+$rwb:  'RalewayBold' , sans-serif
+$rwsb:  'RalewaySemiBold' , sans-serif
+$hbl:  'HelveticaBlack' , sans-serif
+$hbli:  'HelveticaBlackItalic' , sans-serif
+$hbd:  'HelveticaBold' , sans-serif
+$hbdi:  'HelveticaBoldItalic' , sans-serif
+$hh:  'HelveticaHeavy' , sans-serif
+$hhi:  'HelveticaHeavyItalic' , sans-serif
+$hi:  'HelveticaItalic' , sans-serif
+$hl:  'HelveticaLight' , sans-serif
+$hli:  'HelveticaLightItalic' , sans-serif
+$hm:  'HelveticaMedium' , sans-serif
+$hmi:  'HelveticaMediumItalic' , sans-serif
+$hr:  'HelveticaRegular' , sans-serif
+$hth:  'HelveticaThin' , sans-serif
+$hthi:  'HelveticaThinItalic' , sans-serif
+$hul:  'HelveticaUltraLight' , sans-serif
+$huli:  'HelveticaUltraLightItalic' , sans-serif
+$pfcspb:  'PFCentroSlabProBold' , sans-serif
+$pfcspm:  'PFCentroSlabProMedium' , sans-serif
+$pts: 'ptsans' , sans-serif
+$ptsb: 'ptsansbold' , sans-serif
+$psbi: 'ptsansbolditalic' , sans-serif
+$rb:  'RobotoBold' , sans-serif
+$RR: 'RobotoRegular', sans-serif
+$rsb: 'robotoslabbold' , sans-serif
+$rsl: 'robotoslablight' , sans-serif
+$rsr: 'robotoslabregular' , sans-serif
+$rsth: 'robotoslabthin' , sans-serif
+$p:  'pluton' , sans-serif
+$alg: 'algerian' , sans-serif
+$fsr: 'FiraSansRegular' , sans-serif
+$fsb: 'FiraSansBold' , sans-serif
+$fsbi: 'FiraSansBoldItalic' , sans-serif
+$fsl: 'FiraSansLight' , sans-serif
+$fsli: 'FiraSansLightItalic' , sans-serif
+$fsm: 'FiraSansMedium' , sans-serif
+$fsmi: 'FiraSansMediumItalic' , sans-serif
+$fsi: 'FiraSansItalic' , sans-serif
+$m: 'Manuscript' , sans-serif
+
+
+
+
+
+
+
+
+
+@mixin transition($time)
+	-webkit-transition: all $time ease;
+	-moz-transition: all $time ease;
+	-o-transition: all $time ease;
+	transition: all $time ease;
+@mixin transform($time)
+	-webkit-transform: scale($time);
+	-ms-transform: scale($time);
+	transform: scale($time);
+@mixin transition-transform($time)
+	-webkit-transition: -webkit-transform $time ease;
+	transition: transform $time ease;
+
+@mixin transition-color($time)
+	-webkit-transition: color $time ease;
+	transition: color $time ease;
+@mixin box-shadow($value)
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;
