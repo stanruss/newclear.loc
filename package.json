@@ -18,7 +18,7 @@
   "homepage": "https://github.com/stanruss/poecilotheria.loc-clear#readme",
   "devDependencies": {
     "bower": "^1.8.0",
-    "browser-sync": "^2.18.11",
+    "browser-sync": "^2.18.12",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -31,6 +31,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglifyjs": "^0.6.2",
+    "hamburgers": "^0.8.1",
     "imagemin-pngquant": "^5.0.0",
     "postcss-assets": "^4.1.0",
     "postcss-cssnext": "^2.11.0",

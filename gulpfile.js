@@ -1,5 +1,6 @@
 var gulp         = require('gulp');
 var	rename       = require('gulp-rename');
+var browserSync  = require('browser-sync').create();
 var	postcss      = require('gulp-postcss');
 var	assets       = require('postcss-assets');
 var	nested       = require('postcss-nested');
@@ -9,7 +10,17 @@ var	cssnext      = require('postcss-cssnext');
 var	autoprefixer = require('gulp-autoprefixer');
 var	sass         = require('gulp-sass');
 var notify       = require('gulp-notify');
+
+gulp.task('browser-sync', function() {
 	
+		browserSync.init({
+        server: {
+            baseDir: "./",
+            notify: false
+        }
+		
+	});
+});
 
 	gulp.task('sass', function() {
 		var processors = [
@@ -30,14 +41,15 @@ var notify       = require('gulp-notify');
     cascade: false
     }))
 	.pipe(cssnano())
-	.pipe(gulp.dest('./src/styles/'));
+	.pipe(gulp.dest('./src/styles/'))
+	.pipe(browserSync.reload({stream: true}));
 	});
 	
 
 
-gulp.task('watch', ['sass'], function() {
+gulp.task('watch', ['sass', 'browser-sync'], function() {
 	gulp.watch('src/sass/**/*.sass', ['sass']);
-	gulp.watch('/*.html');
+	gulp.watch('/*.html', browserSync.reload);
 	
 });
 
